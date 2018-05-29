@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/select_pic"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/sao_kind" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/fx01"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/select"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/order_find" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/a9v" />
+        </LinearLayout>
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_below="@id/ll"
+         android:id="@+id/ll1"
+         android:layout_marginTop="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:layout_marginTop="30dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="京东直播"
+             android:gravity="center_horizontal"
+             android:background="@drawable/jd_video"
+             android:layout_marginLeft="25dp"
+             android:textSize="20dp"/>
+         <ImageView
+             android:layout_width="300dp"
+             android:layout_height="200dp"
+             android:src="@drawable/video_mare"/>
+     </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

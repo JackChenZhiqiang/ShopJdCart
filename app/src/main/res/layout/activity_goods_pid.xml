@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activities.GoodsPidActivity">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/pid_draw"
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/jx"/>
+
+        <TextView
+            android:id="@+id/pid_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="发的发生发山东山东发顺丰"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/pid_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:text="休闲零食"/>
+
+            <TextView
+                android:id="@+id/pid_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="15dp"
+                android:text="158"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/pid_num"
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="12"
+            android:textSize="13dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_shop"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="200dp"
+        android:text="加入购物车"
+        android:background="#f20"/>
+</LinearLayout>
